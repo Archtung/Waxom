@@ -1,0 +1,88 @@
+body {
+    font-family: Raleway, "Roboto", Montserrat, sans-serif;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 55px 340px 0px 374px;
+    float: left;
+}
+
+.header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.header-logo {
+    width: 185px;
+    display: block;
+    margin: 0;
+    float: left;
+}
+
+.header-logo-title {
+    margin: 0;
+    padding: 0 0 0 65px;
+    position: relative;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+.header-logo-title:before {
+    content: "";
+    width: 64px;
+    height: 56px;
+    position: absolute;
+    left: 0px;
+    top: -8px;
+    background: url('../img/logo.svg') center no-repeat;
+    background-size: cover;
+}
+
+.header-menu {
+    font-size: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.header-menu-items {
+    padding: 0 30px 0 0px;
+    display: inline-block;
+}
+
+.header-cart {
+    float: right;
+}
+
+.header-menu-link {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.slider {
+    width: 100%;
+    min-height: 1024px;
+    box-sizing: border-box;
+    background: url('../img/slider_photo.jpg') center no-repeat #555555;
+}
