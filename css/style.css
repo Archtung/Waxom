@@ -105,10 +105,12 @@ a {
 }
 
 .slider {
+    padding: 0 0 40px 0;
     width: 100%;
     min-height: 1024px;
     box-sizing: border-box;
     background: url('../img/slider_photo.jpg') center no-repeat #555555;
+    background-size: cover;
 }
 
 .slider:after {
@@ -159,6 +161,7 @@ a {
     text-align: center;
     padding: 0 680px 0 680px;
     margin: 0 0 50px 0;
+    font-family: Montserrat;
 }
 
 .slider-btn {
@@ -219,7 +222,6 @@ a {
 .slider-pagination {
     width: 100%;
     text-align: center;
-    padding: 0 0 40px 0;
 }
 
 .slider-pagination-circle {
@@ -235,4 +237,73 @@ a {
 .circle-active {
     background-color: transparent;
     border: 1px solid #a48d72;
+}
+
+.services {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 374px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.services:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.services-card {
+	width: 256px;
+	padding: 78px 0 0 0 ;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.services-web-and-app-title {
+    display: block;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    text-align: center;
+    margin: 0 0 19px 0;
+}
+
+.services-web-and-app-txt {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.services-card:before{
+	content: "";
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	top: 0px;
+	left: 104px;
+	background: url('../img/icon_web&app.jpg') center no-repeat #555555;
+	background-size: cover;
+}
+.services-border {
+    display: block;
+    border: 3px solid #f1eee9;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.development {
+    margin: 0 34px 0 34px;
+}
+
+.customization {
+    margin: 0 34px 0 0;
 }
