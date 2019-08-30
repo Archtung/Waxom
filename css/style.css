@@ -128,7 +128,8 @@ a {
     flex-wrap: wrap;
     align-items: center;
     padding: 280px 0 0 0;
-    margin: 0 0 324px 0 ;
+    margin: 0 0 324px 0;
+    position: relative;
 }
 
 .slider-slogan-title {
@@ -188,6 +189,31 @@ a {
 
 .slider-btn-txt {
     margin: auto;
+}
+
+.arrows {
+    width: 48px;
+    height: 48px;
+    border-color: red;
+
+}
+
+.prev {
+    border-bottom: 3px solid #8c8c8c;
+    border-left: 3px solid #8c8c8c;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 150px;
+}
+
+.next {
+    border-bottom: 3px solid #8c8c8c;
+    border-left: 3px solid #8c8c8c;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 150px;
 }
 
 .slider-pagination {
