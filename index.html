@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/all.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Waxom</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Waxom</title>
 </head>
+
 <body>
-	<div class="container">
-		<header class="header">
-			<a href="index.html" class="header-logo">
-				 <!-- я думал использовать ackground-image и через псевдолемент добавить лого,пока не уверен что лучше -->
-				<h1 class="header-logo-title">Waxom</h1>
-			</a>
-			<ul class="header-menu">
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Home</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">About us</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Portfolio</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Features</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Blog</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Pricing</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Shortcodes</a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link">Contact</a></li>
-				<!-- <li class="header-menu-items"><a href="#" class="header-menu-link"><img src="img/icon_cart.svg" alt=""></a></li>
-				<li class="header-menu-items"><a href="#" class="header-menu-link"><img src="img/icon_search.svg" alt=""></a></li> -->
-			</ul>
-			<a href="#" class="header-cart"><img src="img/icon_cart.svg" alt=""></a>
-		</header>
-		<main class="main-content">
-			<section class="slider"></section>
-			<section class="services"></section>
-			<section class="waxom-realization"></section>
-			<section class="purchase"></section>
-			<section class="latest-projects"></section>
-			<section class="video-presentation"></section>
-			<section class="waxom-mobile"></section>
-			<div class="counters"></div>
-			<section class="recent-posts"></section>
-			<section class="partners"></section>
-		</main>
-		<footer class="footer">
-			<section class="about"></section> <!-- или article -->
-			<section class="footer-recent-posts"></section>
-			<section class="twitter"></section>
-			<section class="footer-widget"></section>
-			<section class="footer-copyright"></section>
-		</footer>
-	</div>
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="header-logo">
+                <h1 class="header-logo-title">Waxom</h1>
+            </a>
+            <ul class="header-menu">
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Home</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">About us</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Portfolio</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Features</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Blog</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Pricing</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Shortcodes</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link">Contact</a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link"><span class="header-cart"></span><!-- <img src="img/icon_cart.svg" alt="" class="header-cart"> --></a></li>
+                <li class="header-menu-items"><a href="#" class="header-menu-link"><span class="header-search"></span><!-- <img src="img/icon_search.svg" alt=""> --></a></li>
+            </ul>
+        </header>
+        <main class="main-content">
+            <section class="slider">
+            	<div class="slogan">
+            		<span class="slider-slogan-title">Unique and Modern Design</span><!--Я не уверен какие теги для заголовков здесь лучше подойдут,поэтому использовал span.-->
+            		<span class="slider-slogan-title-2">Portfolio PSD Template</span>
+            		<p class="slider-slogan-txt">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+            		<a href="#" class="slider-btn"><span class="slider-btn-txt">get started</span>
+            		</a>
+            	</div>
+            	<div class="slider-pagination">
+            		<a href="#" class="slider-pagination-circle"></a>
+            		<a href="#" class="slider-pagination-circle circle-active"></a>
+            		<a href="#" class="slider-pagination-circle"></a>
+            		<a href="#" class="slider-pagination-circle"></a>
+            		<a href="#" class="slider-pagination-circle"></a>
+            	</div>
+            </section>
+            <section class="services"></section>
+            <section class="waxom-realization"></section>
+            <section class="purchase"></section>
+            <section class="latest-projects"></section>
+            <section class="video-presentation"></section>
+            <section class="waxom-mobile"></section>
+            <div class="counters"></div>
+            <section class="recent-posts"></section>
+            <section class="partners"></section>
+        </main>
+        <footer class="footer">
+            <section class="about"></section> <!-- или article я не уверен что выбрать-->
+            <section class="footer-recent-posts"></section>
+            <section class="twitter"></section>
+            <section class="footer-widget"></section>
+            <section class="footer-copyright"></section>
+        </footer>
+    </div>
 </body>
+
 </html>
