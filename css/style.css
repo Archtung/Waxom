@@ -523,14 +523,24 @@ a {
 .latest-projects-title {
     display: block;
     text-align: center;
-    margin: 0;
+    margin: 0 0 24px 0;
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
 }
 
 .project-latest-txt {
     display: block;
     width: 757px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
 }
 
 .latest-project-list {
@@ -538,22 +548,46 @@ a {
     display: block;
     margin: 0 auto;
     text-align: center;
+    margin: 0 0 40px 0;
 }
 
 .latest-project-list-item {
     display: inline-block;
     text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 8px 24px;
+    border-radius: 3px;
+    margin: 0 5px;
 }
-.latest-product-card-wrapper{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+
+.latest-product-list-link {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #8c8c8c;
 }
+
+.latest-project-list-item:hover {
+    background: #998675;
+}
+
+.latest-project-list-item:hover .latest-product-list-link {
+    color: #ffffff;
+}
+
+.latest-product-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .latest-product-card {
     display: block;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 .latest-product-card-img-1 {
@@ -562,9 +596,51 @@ a {
     margin: 0;
 }
 
+.latest-product-link-icon {
+    position: absolute;
+    top: 105px;
+    left: 144px;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.latest-product-loupe-icon {
+    position: absolute;
+    top: 105px;
+    left: 198px;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.latest-product-card:after {
+    content: "";
+    display: none;
+    width: 370px;
+    min-height: 237px;
+    position: absolute;
+    display: none;
+    top: 0px;
+}
+
+.latest-product-card:hover:after {
+	display: block;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.latest-product-card:hover .latest-product-link-icon {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.latest-product-card:hover .latest-product-loupe-icon {
+    visibility: visible;
+    cursor: pointer;
+}
+
 .latest-product-card-desc {
     width: 370px;
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 30px 0 30px 30px;
     background: #fbfaf8;
     position: relative;
@@ -596,4 +672,24 @@ a {
     line-height: 20px;
     font-weight: 300;
     color: #d1d1d1;
+}
+
+.latest-product-btn {
+    display: block;
+    box-sizing: border-box;
+    width: 170px;
+    padding: 19px 24px;
+    background-color: #998675;
+    border-radius: 3.0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.latest-product-btn-txt {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
 }
