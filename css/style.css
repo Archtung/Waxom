@@ -17,7 +17,7 @@ a {
     box-sizing: border-box;
     background: url('../img/slider_photo.jpg') center no-repeat #555555;
     background-size: cover;
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
 }
 
 .header:after {
@@ -153,14 +153,12 @@ a {
 
 .slogan {
     width: 100%;
-    /*     border: 1px solid transparent;
- */
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 0 324px 0;
+    margin: 0 0 335px 0;
     position: relative;
 }
 
@@ -361,9 +359,10 @@ a {
     width: 100%;
     box-sizing: border-box;
     display: block;
-    padding: 83px 344px 0 344px;
     position: relative;
-    margin: 0 0 501px 0;
+    padding: 83px 344px 501px 344px;
+    margin: 0;
+    background: #fbfaf8;
 }
 
 .waxom-realization:after {
@@ -396,40 +395,35 @@ a {
     color: #8c8c8c;
 }
 
+
 .waxom-realization-img_1 {
     position: absolute;
-    top: 300px;
     left: 346px;
+    top: 300px;
     z-index: 99;
     transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
     transition: opacity 1s, transform 1s, -webkit-transform 1s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 .waxom-realization-img_2 {
     position: absolute;
-    top: 218px;
     left: 576px;
+    top: 218px;
     z-index: 100;
     transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
     transition: opacity 1s, transform 1s, -webkit-transform 1s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 .waxom-realization-img_3 {
     position: absolute;
-    top: 300px;
     left: 806px;
+    top: 300px;
     z-index: 99;
     transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
     transition: opacity 1s, transform 1s, -webkit-transform 1s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 .waxom-realization-img_1:hover {
@@ -457,7 +451,10 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-end;
-    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    background: #1a1514;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #1a1514), color-stop(14%, #1a1514), color-stop(46%, #36251b), color-stop(61%, #3e2a1e), color-stop(76%, #3e2a1e), color-stop(100%, #3e2a1e));
+    background: linear-gradient(to right, #1a1514 0%, #1a1514 14%, #36251b 46%, #3e2a1e 61%, #3e2a1e 76%, #3e2a1e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1514', endColorstr='#3e2a1e', GradientType=1);
 }
 
 .purchase-title {
@@ -469,9 +466,11 @@ a {
     font-weight: 400;
     color: #fff;
 }
-.purchase-title_2{
-	color: #c7b299;
+
+.purchase-title_2 {
+    color: #c7b299;
 }
+
 .purchase-txt {
     text-align: left;
     font-family: Montserrat;
@@ -505,4 +504,96 @@ a {
     font-weight: 800;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.latest-projects {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 80px 374px;
+}
+
+.latest-projects:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.latest-projects-title {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+.project-latest-txt {
+    display: block;
+    width: 757px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.latest-project-list {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.latest-project-list-item {
+    display: inline-block;
+    text-align: center;
+}
+.latest-product-card-wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.latest-product-card {
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.latest-product-card-img-1 {
+    width: 370px;
+    min-height: 237px;
+    margin: 0;
+}
+
+.latest-product-card-desc {
+    width: 370px;
+    margin: 0;
+    padding: 30px 0 30px 30px;
+    background: #fbfaf8;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.latest-product-card-desc:after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: -25px;
+    border: 15px solid transparent;
+    border-bottom: 10px solid #fbfaf8;
+}
+
+.latest-product-1-title {
+    font-family: Raleway;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #c7b299;
+}
+
+.latest-product-1-txt {
+    margin: 5px 0 0 0;
+    display: block;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #d1d1d1;
 }
