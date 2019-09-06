@@ -870,7 +870,7 @@ a {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 80px 390px 0 422px;
+    padding: 80px 390px 170px 422px;
     background: url('../img/waxom_mobile_img.png') 422px 80px no-repeat #fbfaf8;
     background-size: 423px 616px;
 }
@@ -1077,4 +1077,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+.recent-posts-card-img{
+	display: block;
 }
