@@ -1292,7 +1292,10 @@ a {
     align-items: center;
     flex-wrap: wrap;
 }
-
+.partners-links:hover .partners-img{
+    -webkit-transform: scale(1.02, 1.02);
+            transform: scale(1.02, 1.02);
+}
 .footer {
     display: block;
     width: 100%;
@@ -1541,7 +1544,10 @@ a {
 .footer-widget-img:nth-child(2) {
     margin: 0 0 10px 0;
 }
-
+.footer-widget-img:hover{
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+}
 .footer-copyright {
     display: flex;
     justify-content: space-between;
